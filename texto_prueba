@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(void)
+{
+    int n, i;
+    int fn_2=0, fn_1=1, fn;
+    
+    
+    printf("introduce numero terminos:");
+    scanf("%d",&n);
+    
+    for (i=1;i<=n;i++)
+    {
+        fn = fn_2 + fn_1;
+        fn_2 = fn_1;
+        fn_1 = fn;
+        
+        printf("%d\n", fn_2);
+        
+    }
+    
+    system("PAUSE");
+    return 0;
+}
